@@ -1,3 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@800&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@800&family=Roboto+Condensed&family=Roboto:ital@1&display=swap');
+
 body {
   background-color: antiquewhite;
+  font-family: Roboto Condensed;
+}
+
+.form-one {
+  width: 428px;
+  height: 550px;
+}
+
+.container-one {
+  padding: 32px;
+}
+
+.input-one {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 5px;
+  align-self: stretch;
+}
+
+.input-label {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 4px;
+}
+
+/* TOGGLE CHECKBOX */
+/* The switch - the box around the slider */
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 16px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s; //sets the transition animation with a duration of 0.4 seconds
+  transition: .4s;
+}
+
+.slider:before { //::before adds additional content before the content of the element
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  background-color: white;
+  -webkit-transition: .4s; //animation should have a duration of 0.4 seconds
+  transition: .4s;
+}
+
+input:checked + .slider { //checkboxes that the user has checked
+  background-color: #FD7918;
+}
+
+input:focus + .slider { //is active or in the user's focus
+  box-shadow: 0 0 1px #FD7918;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px); //Google Chrome and Safari
+  -ms-transform: translateX(14px); // Internet Explorer and Microsoft Edge
+  transform: translateX(14px); // standard version
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.toggle-checkbox-container {
+  display: flex;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.subscribe-text {
+  font-family: Inter;
+  padding-left: 5px;
+}
+
+/* SIGN IN BUTTON */
+
+.sign-in-button-container {
+   padding-bottom: 44px;
+}
+
+.sign-in-button {
+  width: 100%;
+  display: flex;
+  padding: 12px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 5px;
+  background: var(--purple-100, #651FFF);
 }
