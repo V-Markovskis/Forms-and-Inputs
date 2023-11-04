@@ -13,6 +13,7 @@ body {
 
 .container-one {
   padding: 32px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
 }
 
 .input-one {
@@ -100,7 +101,6 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   padding-top: 22px;
-  padding-bottom: 20px;
 }
 
 .subscribe-text {
@@ -111,7 +111,8 @@ input:checked + .slider:before {
 /* SIGN IN BUTTON */
 
 .sign-in-button-container {
-   padding-bottom: 44px;
+   padding-top: 32px;
+   padding-bottom: 32px;
 }
 
 .sign-in-button {
@@ -125,3 +126,41 @@ input:checked + .slider:before {
   border-radius: 5px;
   background: var(--purple-100, #651FFF);
 }
+
+.forgot-password {
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle {
+  width: 100%;
+  height: 2px;
+  background: gray;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.continue-text {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5A5761;
+}
+
+.google-logo, .facebook-logo {
+  width: 24px;
+  height: 24px;
+}
+
+.google-buttom, .facebook-buttom{
+  padding: 12px 75px;
+  margin-top: 16px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 16px;
+}
+
