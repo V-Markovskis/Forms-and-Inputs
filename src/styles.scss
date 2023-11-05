@@ -170,9 +170,12 @@ input:checked + .slider:before {
 .form-two {
   width: 874px;
   height: 810px;
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
 }
 
 .container-two {
+  width: 666px;
+  height: 654px;
   display: grid;
   gap: 16px;
   margin: 104px;
@@ -249,11 +252,52 @@ input:checked + .slider:before {
   background: #651FFF;
 }
 
-.box-8 {
+.box-8, .box-8-test {
   justify-self: end;
 }
 
+/* FORM THREE */
+.form-three {
+  width: 874px;
+  height: 872px;
+}
+
+.resizable-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area {
+  padding-top: 8px;
+  padding-left: 12px;
+}
 
 
+.custom-container-form-three {
+  display: grid;
+  gap: 16px;
+  margin: 104px;
+  padding: 32px;
+
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
+}
 
 
+.box-9 {
+  grid-column: 1;
+  grid-row: 1 / 7;
+  background: #651FFF;
+}
+
+.inner-container-one {
+  display: grid;
+  gap: 16px;
+  padding: 46px 16px 32px 16px;
+}
+
+.box-1-test, .box-6-test, .box-7-test, .box-8-test {
+  grid-column: 2 / 4;
+}
