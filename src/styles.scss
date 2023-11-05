@@ -252,7 +252,7 @@ input:checked + .slider:before {
   background: #651FFF;
 }
 
-.box-8, .box-8-test {
+.box-8, .box-8-test, .box-5-form-4 {
   justify-self: end;
 }
 
@@ -300,4 +300,76 @@ input:checked + .slider:before {
 
 .box-1-test, .box-6-test, .box-7-test, .box-8-test {
   grid-column: 2 / 4;
+}
+
+/* FORM FOUR */
+
+.form-four {
+  width: 874px;
+  height: 716px;
+}
+
+.container-four {
+  box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
+  width: 666px;
+  height: 508px;
+  margin: 104px;
+
+  display: grid;
+  grid-template-columns: 1fr, 2fr;
+  grid-template-rows: 1fr, 2fr, 1fr, 1fr; 
+  gap: 32px;
+}
+
+.box-1-form-4 {
+  grid-column: 1 / 4;
+}
+
+.box-2-form-4 {
+  grid-column: 1 / 2;
+}
+
+.box-3-form-4 {
+  grid-column: 2 / 4;
+}
+
+.box-2-inner-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  gap: 4px;
+}
+
+.box-2-element-1 {
+  grid-column: 2 / 3;
+}
+
+.box-3-inner-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 4px;
+}
+
+.box-4-form-4 {
+  grid-column: 1 / 4;
+}
+
+.box-4-inner-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 8px
+}
+
+.box-5-form-4 {
+  grid-column: 1 / 4;
+}
+
+.checkout-text {
+  color: #5A5761;
+}
+
+.container-four h5 {
+  padding-bottom: 16px;
 }
