@@ -16,13 +16,11 @@ body {
   box-shadow: 40px 40px 60px 0px rgba(0, 0, 0, 0.10);
 }
 
-.input-one {
+.input-one, .input-two {
   width: 100%;
   padding: 12px;
   display: flex;
-  align-items: flex-start;
   border-radius: 5px;
-  align-self: stretch;
 }
 
 .input-label {
@@ -162,4 +160,100 @@ input:checked + .slider:before {
   display: flex;
   gap: 16px;
 }
+
+/* FORM TWO */
+
+.form-separator {
+  margin-top: 150px;
+}
+
+.form-two {
+  width: 874px;
+  height: 810px;
+}
+
+.container-two {
+  display: grid;
+  gap: 16px;
+  margin: 104px;
+  padding: 32px;
+
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(6, auto);
+  
+}
+
+
+
+.box-1, .box-6, .box-7, .box-8 {
+  grid-column: 1 / 3;
+}
+
+
+/* customer input checkbox */
+.real-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  border: none; 
+}
+
+.real-checkbox:focus + .custom-checkbox {
+  box-shadow: 0px 0px 0px 1px #38577a, 0px 0px 10px #7e9bbd;
+}
+
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-right: 5px;
+  vertical-align: sub; //aligns custom button with the text
+}
+
+.custom-checkbox::before {
+  content: '\2713';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: background-color 0.3s;
+}
+
+.real-checkbox:checked + .custom-checkbox {
+  background-color: #FD7918; // change color if clicked
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.type-message {
+  width: 100%;
+  padding: 8px 14px 160px 12px;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 48px;
+  border-radius: 5px;
+  
+  background: #651FFF;
+}
+
+.box-8 {
+  justify-self: end;
+}
+
+
+
+
 
